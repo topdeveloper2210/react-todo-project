@@ -11,7 +11,7 @@ import "./App.css"
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Navbar />
       <Routes>
           <Route exact path="/" element={<TodoContainer />} />
